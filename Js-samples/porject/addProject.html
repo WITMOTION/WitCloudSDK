@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>增加设备项目示例</title>
+    <script src="./witcloud-sdk-1.0.0.min.js"></script>
+</head>
+<body>
+    <input type="text" id="projectName"  placeholder="请输入设备项目名称">
+    <button onclick="add()">增加设备项目</button>
+
+    <script>
+        function add() {
+            var param = {};
+            param.name = document.getElementById("projectName").value
+            witCloudApi.projectApi.add(param).then((res) => {
+                if (res.success) {
+                    alert('添加成功')
+                } else {
+                    // 如果添加失败请按照 res.message 的返回信息修正错误
+                    alert('添加失败：' + res.message)
+                }
+            }).catch((err) => {
+                alert('添加错误：' + err.message)
+            })
+        }
+    </script>
+</body>
+</html>

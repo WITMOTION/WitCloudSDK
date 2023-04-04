@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修改设备项目示例</title>
+    <script src="./witcloud-sdk-1.0.0.min.js"></script>
+</head>
+<body>
+    <input type="text" id="projectName">
+    <button onclick="edit()">修改设备项目</button>
+
+    <script>
+        function edit() {
+            var param = {};
+            param.id = "1589899487223570434" // 例如你的项目id
+            param.name = document.getElementById("projectName").value
+            witCloudApi.projectApi.edit(param).then((res) => {
+                if (res.success) {
+                    alert('修改成功')
+                } else {
+                    // 如果修改失败请按照 res.message 的返回信息修正错误
+                    alert('修改失败：' + res.message)
+                }
+            }).catch((err) => {
+                alert('修改错误：' + err.message)
+            })
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3ED23682-7962-4C55-8783-2EF7B851AD37}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>witcloud_sdk_samples</RootNamespace>
+    <AssemblyName>witcloud-sdk-samples</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SuperSocket.ClientEngine, Version=0.10.0.0, Culture=neutral, PublicKeyToken=ee9af13f57f00acc, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperSocket.ClientEngine.Core.0.10.0\lib\net45\SuperSocket.ClientEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Wit.ServerApi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\Wit.ServerApi.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Examples\Equipment\FrmControlEquipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Equipment\FrmControlEquipment.Designer.cs">
+      <DependentUpon>FrmControlEquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Equipment\FrmEditEquipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Equipment\FrmEditEquipment.Designer.cs">
+      <DependentUpon>FrmEditEquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Equipment\FrmQueryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Equipment\FrmQueryDetail.Designer.cs">
+      <DependentUpon>FrmQueryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Equipment\FrmQueryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Equipment\FrmQueryList.Designer.cs">
+      <DependentUpon>FrmQueryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Equipment\NowData\FrmQueryNowData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Equipment\NowData\FrmQueryNowData.Designer.cs">
+      <DependentUpon>FrmQueryNowData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Equipment\RecordData\FrmQueryAlarmData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Equipment\RecordData\FrmQueryAlarmData.Designer.cs">
+      <DependentUpon>FrmQueryAlarmData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Equipment\RecordData\FrmQueryHistoryData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Equipment\RecordData\FrmQueryHistoryData.Designer.cs">
+      <DependentUpon>FrmQueryHistoryData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Equipment\RecordData\FrmQueryOperationData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Equipment\RecordData\FrmQueryOperationData.Designer.cs">
+      <DependentUpon>FrmQueryOperationData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Label\FrmAddLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Label\FrmAddLabel.Designer.cs">
+      <DependentUpon>FrmAddLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Label\FrmDeleteLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Label\FrmDeleteLabel.Designer.cs">
+      <DependentUpon>FrmDeleteLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Label\FrmEditLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Label\FrmEditLabel.Designer.cs">
+      <DependentUpon>FrmEditLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Label\FrmLabelList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Label\FrmLabelList.Designer.cs">
+      <DependentUpon>FrmLabelList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Project\FrmAddProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Project\FrmAddProject.Designer.cs">
+      <DependentUpon>FrmAddProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Project\FrmDeleteProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Project\FrmDeleteProject.Designer.cs">
+      <DependentUpon>FrmDeleteProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Project\FrmEditProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Project\FrmEditProject.Designer.cs">
+      <DependentUpon>FrmEditProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Project\FrmProjectList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\Project\FrmProjectList.Designer.cs">
+      <DependentUpon>FrmProjectList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExamplesMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExamplesMain.Designer.cs">
+      <DependentUpon>FrmExamplesMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Examples\Equipment\FrmControlEquipment.resx">
+      <DependentUpon>FrmControlEquipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\Equipment\FrmEditEquipment.resx">
+      <DependentUpon>FrmEditEquipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\Equipment\FrmQueryDetail.resx">
+      <DependentUpon>FrmQueryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\Equipment\FrmQueryList.resx">
+      <DependentUpon>FrmQueryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\Equipment\NowData\FrmQueryNowData.resx">
+      <DependentUpon>FrmQueryNowData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\Equipment\RecordData\FrmQueryAlarmData.resx">
+      <DependentUpon>FrmQueryAlarmData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\Equipment\RecordData\FrmQueryHistoryData.resx">
+      <DependentUpon>FrmQueryHistoryData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\Equipment\RecordData\FrmQueryOperationData.resx">
+      <DependentUpon>FrmQueryOperationData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\Label\FrmAddLabel.resx">
+      <DependentUpon>FrmAddLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\Label\FrmDeleteLabel.resx">
+      <DependentUpon>FrmDeleteLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\Label\FrmEditLabel.resx">
+      <DependentUpon>FrmEditLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\Label\FrmLabelList.resx">
+      <DependentUpon>FrmLabelList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\Project\FrmAddProject.resx">
+      <DependentUpon>FrmAddProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\Project\FrmDeleteProject.resx">
+      <DependentUpon>FrmDeleteProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\Project\FrmEditProject.resx">
+      <DependentUpon>FrmEditProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\Project\FrmProjectList.resx">
+      <DependentUpon>FrmProjectList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExamplesMain.resx">
+      <DependentUpon>FrmExamplesMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Dll\Wit.ServerApi.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

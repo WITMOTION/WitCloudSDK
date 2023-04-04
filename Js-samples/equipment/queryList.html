@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查询设备列表示例</title>
+    <style>
+        .equipmentList > button {
+            margin-top: 10px;
+        }
+    </style>
+    <script src="./witcloud-sdk-1.0.0.min.js"></script>
+</head>
+
+<body>
+    <div class="equipmentList">
+        <div id="onlineStatus">在线状态：</div>
+        <div id="lastOnlineTime">最后在线时间：</div>
+        <div id="deviceNo">设备号：</div>
+        <div id="type">设备类型：</div>
+        <div id="dataStorage">数据存储数量：</div>
+        <div id="labels">设备标签：</div>
+        <div id="projectId">设备项目：</div>
+        <div id="status">设备状态：</div>
+        <button onclick="list()"> 查询设备列表 </button>
+    </div>
+
+    <script>
+        // 注意：在查询之前需要进行登录操作
+        // 查询方法：点击后向后台服务器发起查询设备请求
+        function list() {
+            var param = {};
+            // 可以查询到您账号下绑定的所有设备
+            witCloudApi.equipmentApi.list(param).then((res) => {
+                if (res.success) {
+                    // alert('查询成功')
+                    if(Object.keys(res.data).length == 0){
+                        alert("无设备信息")
+                        return
+                    }
+                    document.getElementById("onlineStatus").textContent = "在线状态：" + res.data[0].onlineStatus
+                    document.getElementById("lastOnlineTime").textContent = "最后在线时间：" + res.data[0].lastOnlineTime
+                    document.getElementById("deviceNo").textContent = "设备号：" + res.data[0].no
+                    document.getElementById("type").textContent = "设备类型：" + res.data[0].type
+                    document.getElementById("dataStorage").textContent = "数据存储数量：" + res.data[0].currentDataStorage + "/" + res.data[0].maxDataStorage
+                    document.getElementById("labels").textContent = "设备标签：" + res.data[0].labels
+                    document.getElementById("projectId").textContent = "设备项目：" + res.data[0].projectId
+                    document.getElementById("status").textContent = "设备状态：" + res.data[0].status
+
+                } else {
+                    // 如果查询失败请按照 res.message 的返回信息修正错误
+                    alert('查询失败：' + res.message)
+                }
+            }).catch((err) => {
+                alert('查询错误：' + err.message)
+            })
+        }
+    </script>
+</body>
+
+</html>

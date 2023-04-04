@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查询历史数据记录示例</title>
+    <style>
+        button {
+            margin-top: 10px;
+        }
+    </style>
+    <script src="./witcloud-sdk-1.0.0.min.js"></script>
+</head>
+<body>
+
+    <button id="queryBtn" onclick="list()">查询历史记录</button>
+
+    <script>
+        function list() {
+            var param = {};
+            param.equipmentId = "1496398317873975297" // 例如：您的设备id
+
+            witCloudApi.recordApi.clientList(param).then((res) => {
+                if (res.success) {
+                    if(Object.keys(res.data).length == 0){
+                        alert("查询成功，无历史记录信息")
+                        return
+                    }
+
+                    // 打印在控制台展示数据
+                    console.log(res.data)
+                } else {
+                    // 如果查询失败请按照 res.message 的返回信息修正错误
+                    alert('查询失败：' + res.message)
+                }
+            }).catch((err) => {
+                alert('查询错误：' + err.message)
+            })
+        }
+    </script>
+</body>
+</html>

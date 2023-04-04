@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>删除设备标签示例</title>
+    <script src="./witcloud-sdk-1.0.0.min.js"></script>
+</head>
+<body>
+    <button onclick="del()">删除设备标签</button>
+
+    <script>
+        function del() {
+            var param = {};
+            param.id = "1589870974625996802" // 例如：您的标签id
+            witCloudApi.labelApi.del(param).then((res) => {
+                if (res.success) {
+                    alert('删除成功')
+                } else {
+                    // 如果删除失败请按照 res.message 的返回信息修正错误
+                    alert('删除失败：' + res.message)
+                }
+            }).catch((err) => {
+                alert('删除错误：' + err.message)
+            })
+        }
+    </script>
+</body>
+</html>

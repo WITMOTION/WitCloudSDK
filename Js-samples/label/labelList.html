@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>获得设备标签示例</title>
+    <style>
+        .equipmentList > button {
+            margin-top: 10px;
+        }
+    </style>
+    <script src="./witcloud-sdk-1.0.0.min.js"></script>
+</head>
+<body>
+    <div class="equipmentList">
+        <div id="label">标签名称：</div>
+        <div id="ownerUser">拥有者：</div>
+        <div id="createTime">创建时间：</div>
+        <div id="updateTime">更新时间：</div>
+        <div id="createUser">创建用户：</div>
+        <div id="updateUser">更新用户：</div>
+        <button onclick="list()"> 查询设备标签 </button>
+    </div>
+
+    <script>
+        function list() {
+            var param = {};
+            witCloudApi.labelApi.list(param).then((res) => {
+                if (res.success) {
+                    // alert('查询成功')
+                    if(Object.keys(res.data).length == 0){
+                        alert("无标签信息")
+                        return
+                    }
+                    document.getElementById("label").textContent = "标签名称：" + res.data[0].label
+                    document.getElementById("ownerUser").textContent = "拥有者：" + res.data[0].ownerUser
+                    document.getElementById("createTime").textContent = "创建时间：" + res.data[0].createTime
+                    document.getElementById("updateTime").textContent = "更新时间：" + res.data[0].updateTime
+                    document.getElementById("createUser").textContent = "创建用户：" + res.data[0].createUser
+                    document.getElementById("updateUser").textContent = "更新用户：" + res.data[0].updateUser
+                } else {
+                    // 如果查询失败请按照 res.message 的返回信息修正错误
+                    alert('查询失败：' + res.message)
+                }
+            }).catch((err) => {
+                alert('查询错误：' + err.message)
+            })
+        }
+    </script>
+</body>
+</html>

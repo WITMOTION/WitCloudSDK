@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>获得设备实时报警示例</title>
+    <style>
+        div {
+            width: 100%;
+            height: 100px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+    <script src="./witcloud-sdk-1.0.0.min.js"></script>
+</head>
+<body>
+    <div id="showData"></div>
+    <button onclick="connect()">查询设备实时报警</button>
+</body>
+<script>
+
+    // 查询实时数据
+    function connect() {
+        witCloudApi.nowDataApi.onOpen = onOpen
+        witCloudApi.nowDataApi.onError = onError
+        witCloudApi.nowDataApi.onClose = onClose
+        // 连接服务器
+        witCloudApi.nowDataApi.connect()
+    }
+
+    // 收到数据的回调方法
+    function callback(data){
+        // 打印数据展示
+        console.log(JSON.stringify(data))
+        document.getElementById("showData").textContent = JSON.stringify(data);
+    }
+
+    // 监听socket错误信息
+    function onOpen(){
+        var param = {};
+        param.equipmentNoList = ['WT5400000117'] // 例如：您的设备编号,可以多个
+        // 请求数据
+        witCloudApi.nowDataApi.requestNowData(param)
+        // 设置回调方法
+        witCloudApi.nowDataApi.alarmCallbacks.push(callback)
+    }
+
+    // 监听socket错误信息
+    function onError(){
+        alert('实时数据websocket连接错误')
+    }
+
+    // 监听socket关闭
+    function onClose(){
+        alert('socket已经关闭')
+    }
+</script>
+</html>

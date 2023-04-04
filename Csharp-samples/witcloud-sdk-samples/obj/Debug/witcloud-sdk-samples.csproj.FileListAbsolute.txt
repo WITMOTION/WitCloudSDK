@@ -1,0 +1,70 @@
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\bin\Debug\witcloud-sdk-samples.exe.config
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\bin\Debug\witcloud-sdk-samples.exe
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\bin\Debug\witcloud-sdk-samples.pdb
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud-sdk-samples.csproj.AssemblyReference.cache
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.FrmExamplesMain.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Properties.Resources.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud-sdk-samples.csproj.GenerateResource.cache
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud-sdk-samples.csproj.CoreCompileInputs.cache
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud-sdk-samples.exe
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud-sdk-samples.pdb
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\bin\Debug\Newtonsoft.Json.dll
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\bin\Debug\ConfigHelper.dll
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\bin\Debug\Wit.Framework.Core.dll
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\bin\Debug\Wit.Framework.Core.pdb
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\bin\Debug\Wit.Framework.Core.dll.config
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.FrmLogin.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud-sdk-samples.csproj.CopyComplete
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.FrmQueryList.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.FrmQueryDetail.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.FrmControlEquipment.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.FrmEditEquipment.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.NowData.FrmQueryNowData.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.RecordData.FrmQueryAlarmData.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.RecordData.FrmQueryHistoryData.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.RecordData.FrmQueryOperationData.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Label.FrmAddLabel.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Label.FrmDeleteLabel.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Label.FrmEditLabel.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Label.FrmLabelList.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Project.FrmAddProject.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Project.FrmDeleteProject.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Project.FrmEditProject.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Project.FrmProjectList.resources
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\bin\Debug\SuperSocket.ClientEngine.dll
+E:\A_workspace\Develop\1.CSharp\1.company\wit - 副本\WitFramework\witcloud-sdk-samples\bin\Debug\Wit.ServerApi.dll
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\bin\Debug\witcloud-sdk-samples.exe.config
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\bin\Debug\witcloud-sdk-samples.exe
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\bin\Debug\witcloud-sdk-samples.pdb
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\bin\Debug\SuperSocket.ClientEngine.dll
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\bin\Debug\Wit.ServerApi.dll
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\bin\Debug\Newtonsoft.Json.dll
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\bin\Debug\ConfigHelper.dll
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\bin\Debug\Wit.Framework.Core.dll
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\bin\Debug\Wit.Framework.Core.pdb
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\bin\Debug\Wit.Framework.Core.dll.config
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud-sdk-samples.csproj.AssemblyReference.cache
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.FrmControlEquipment.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.FrmEditEquipment.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.FrmQueryDetail.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.FrmQueryList.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.NowData.FrmQueryNowData.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.RecordData.FrmQueryAlarmData.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.RecordData.FrmQueryHistoryData.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Equipment.RecordData.FrmQueryOperationData.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.FrmLogin.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Label.FrmAddLabel.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Label.FrmDeleteLabel.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Label.FrmEditLabel.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Label.FrmLabelList.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Project.FrmAddProject.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Project.FrmDeleteProject.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Project.FrmEditProject.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Examples.Project.FrmProjectList.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.FrmExamplesMain.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud_sdk_samples.Properties.Resources.resources
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud-sdk-samples.csproj.GenerateResource.cache
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud-sdk-samples.csproj.CoreCompileInputs.cache
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud-sdk-samples.csproj.CopyComplete
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud-sdk-samples.exe
+E:\A_workspace\Develop\1.CSharp\1.company\witcloud-sdk-csharp-samples\witcloud-sdk-csharp-samples\witcloud-sdk-samples\obj\Debug\witcloud-sdk-samples.pdb

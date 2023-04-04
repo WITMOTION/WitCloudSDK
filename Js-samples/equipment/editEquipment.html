@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置设备信息示例</title>
+    <script src="./witcloud-sdk-1.0.0.min.js"></script>
+    <style>
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="equipmentList">
+        <div>设备名称：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="name"/></div>
+        <div>设备标签：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="labels"/></div>
+        <div>备注信息：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="remark"/></div>
+        <div>设备项目：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="projectId"/></div>
+        <div>所在地址：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="address"/></div>
+        <div>在线超时时间：<input type="text" id="onlineTimeout"/></div>
+        <button onclick="edit()"> 设置设备信息 </button>
+    </div>
+
+    <script>
+        function edit() {
+            var param = {};
+            param.id = "1551489042042724353" // 例如：您的设备id
+            param.name = document.getElementById("name").value
+            param.labels = document.getElementById("labels").value
+            param.remark = document.getElementById("remark").value
+            param.projectId = document.getElementById("projectId").value
+            param.address = document.getElementById("address").value
+            param.onlineTimeout = document.getElementById("onlineTimeout").value
+            witCloudApi.equipmentApi.edit(param).then((res) => {
+                if (res.success) {
+                    alert('编辑成功')
+                } else {
+                    // 如果编辑失败请按照 res.message 的返回信息修正错误
+                    alert('编辑失败：' + res.message)
+                }
+            }).catch((err) => {
+                alert('编辑错误：' + err.message)
+            })
+        }
+    </script>
+</body>
+</html>

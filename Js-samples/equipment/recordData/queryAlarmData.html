@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查询报警记录示例</title>
+    <style>
+        .equipmentList > button {
+            margin-top: 10px;
+        }
+    </style>
+    <script src="./witcloud-sdk-1.0.0.min.js"></script>
+</head>
+
+<body>
+    <div class="equipmentList">
+        <div id="equipment">报警设备：</div>
+        <div id="summary">报警摘要：</div>
+        <div id="content">报警信息：</div>
+        <div id="status">报警状态：</div>
+        <div id="lookUser">查看人：</div>
+        <div id="lookTime">查看时间：</div>
+        <div id="createTime">创建时间：</div>
+        <button onclick="list()"> 查询报警记录 </button>
+    </div>
+
+    <script>
+        function list() {
+            var param = {};
+            witCloudApi.alarmApi.list(param).then((res) => {
+                if (res.success) {
+                    // alert('查询成功')
+                    if(Object.keys(res.data).length == 0){
+                        alert("无报警记录信息")
+                        return
+                    }
+                    document.getElementById("equipment").textContent = "报警设备：" + res.data[0].equipment
+                    document.getElementById("summary").textContent = "报警摘要：" + res.data[0].summary
+                    document.getElementById("content").textContent = "报警信息：" + res.data[0].content
+                    document.getElementById("status").textContent = "报警状态：" + res.data[0].status
+                    document.getElementById("lookUser").textContent = "查看人：" + res.data[0].lookUser
+                    document.getElementById("lookTime").textContent = "查看时间：" + res.data[0].lookTime
+                    document.getElementById("createTime").textContent = "创建时间：" + res.data[0].createTime
+                } else {
+                    // 如果查询失败请按照 res.message 的返回信息修正错误
+                    alert('查询失败：' + res.message)
+                }
+            }).catch((err) => {
+                alert('查询错误：' + err.message)
+            })
+        }
+    </script>
+</body>
+
+</html>

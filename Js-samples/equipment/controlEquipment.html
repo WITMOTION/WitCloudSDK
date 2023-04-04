@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>控制设备示例</title>
+    <script src="./witcloud-sdk-1.0.0.min.js"></script>
+</head>
+<body>
+    <button onclick="send()">发送命令</button>
+</body>
+<script>
+    function send() {
+        var param = {};
+        param.equipmentId = "1496398317873975297" // 您的设备id
+        param.cmd = "FF AA 01 01 00"              // 您需要发送的命令
+        param.isHex = false                       // 是否为16进制
+        param.name = "加计校准"                    // 操作名称
+
+        witCloudApi.equipmentApi.sendData(param).then((res) => {
+            if (res.success) {
+                alert("发送命令成功")
+            } else {
+                // 如果发送命令失败请按照 res.message 的返回信息修正错误
+                alert('发送命令失败：' + res.message)
+            }
+        }).catch((err) => {
+            alert('发送命令错误：' + err.message)
+        })
+    }
+</script>
+</html>

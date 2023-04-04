@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查询历史操作记录示例</title>
+    <style>
+        .equipmentList > button {
+            margin-top: 10px;
+        }
+    </style>
+    <script src="./witcloud-sdk-1.0.0.min.js"></script>
+</head>
+<body>
+    <div class="equipmentList">
+        <div id="type">操作类型：</div>
+        <div id="name">操作名称：</div>
+        <div id="equipmentNo">设备编号：</div>
+        <div id="equipmentId">被操作的设备：</div>
+        <div id="arrivalTime">到达时间：</div>
+        <div id="status">状态：</div>
+        <div id="command">下发的命令：</div>
+        <button onclick="page()"> 查询历史操作 </button>
+    </div>
+    
+    <script>
+        function page() {
+            var param = {};
+            witCloudApi.operationApi.page(param).then((res) => {
+                if (res.success) {
+                    if(Object.keys(res.data.rows).length == 0){
+                        alert("查询成功，无操作记录信息")
+                        return
+                    }
+                    
+                    document.getElementById("type").textContent = "操作类型：" + res.data.rows[0].type
+                    document.getElementById("name").textContent = "操作名称：" + res.data.rows[0].name
+                    document.getElementById("equipmentNo").textContent = "设备编号：" + res.data.rows[0].equipmentNo
+                    document.getElementById("equipmentId").textContent = "被操作的设备：" + res.data.rows[0].equipmentId
+                    document.getElementById("arrivalTime").textContent = "到达时间：" + res.data.rows[0].arrivalTime
+                    document.getElementById("status").textContent = "状态：" + res.data.rows[0].status
+                    document.getElementById("command").textContent = "下发的命令：" + res.data.rows[0].command
+                } else {
+                    // 如果查询失败请按照 res.message 的返回信息修正错误
+                    alert('查询失败：' + res.message)
+                }
+            }).catch((err) => {
+                alert('查询错误：' + err.message)
+            })
+        }
+    </script>
+</body>
+</html>
